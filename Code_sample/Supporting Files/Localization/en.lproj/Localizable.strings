@@ -1,0 +1,35 @@
+/* 
+  Localizable.strings
+  Code_sample
+
+  Created by Sergey Blazhko on 07.02.2020.
+  Copyright © 2020 Sergey Blazhko. All rights reserved.
+*/
+
+"unreported_damages.title" = "Please identify the unreported damage area";
+"unreported_damages.front_title" = "Front Side";
+"unreported_damages.back_title" = "Back Side";
+"unreported_damages.left_title" = "Left Side";
+"unreported_damages.right_title" = "Right Side";
+
+"alert_action.take_photo" = "Take a photo";
+"alert_action.select_from_gallery" = "Select from Library";
+"alert_action.open_gallery" = "Select from Library";
+"alert_action.delete_image" = "Delete image";
+
+"alert_action.open_settings" = "Open settings";
+"alert_action.cancel" = "Cancel";
+
+"alert_title.permission_denied" = "Permission denied.";
+"alert_title.library_limited" = "Permission limited.";
+
+"comment_placeholder" = "Comment";
+"next_button_title" = "Next";
+
+"alert_message.library_denied" = "To select an photo you will need to turn on library permisson.";
+"alert_message.library_limited" = "Library permissions limited. Some photos may be unavailable.";
+"alert_message.camera_denied" = "To take a photo you will need to turn on camera permisson.";
+
+"no_comment_error_description" = "Please fill comment";
+"image_is_uploading_error_description" = "Please wait untill image uploading finished";
+"image_uploading_failed_error_description" = "Some images uploading failed. Please retry uploading or remove them";

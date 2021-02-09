@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="UnreportedDamageCell" customModule="eCar_TestTask" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="125" height="119"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="125" height="119"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wtg-Kb-iDf">
+                        <rect key="frame" x="0.0" y="0.0" width="125" height="119"/>
+                        <color key="backgroundColor" name="SecondaryElementBackgroundColor"/>
+                    </view>
+                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DamagePlaceholder" translatesAutoresizingMaskIntoConstraints="NO" id="BPu-by-ncS">
+                        <rect key="frame" x="8" y="8" width="109" height="77"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="752" verticalCompressionResistancePriority="752" text="Front Side" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KUd-HX-8h7">
+                        <rect key="frame" x="8" y="93" width="109" height="18"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jar-59-mVg" customClass="UploadingProgressView" customModule="eCar_TestTask" customModuleProvider="target">
+                        <rect key="frame" x="8" y="8" width="109" height="77"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gQC-xC-0nM">
+                        <rect key="frame" x="93" y="0.0" width="32" height="32"/>
+                        <color key="backgroundColor" name="DeleteBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="32" id="QMD-x6-LFq"/>
+                            <constraint firstAttribute="width" secondItem="gQC-xC-0nM" secondAttribute="height" multiplier="1:1" id="b4O-Z5-Lcl"/>
+                        </constraints>
+                        <state key="normal" image="DeleteButtonIcon"/>
+                    </button>
+                </subviews>
+            </view>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="BPu-by-ncS" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="02W-ow-qQB"/>
+                <constraint firstItem="Jar-59-mVg" firstAttribute="centerY" secondItem="BPu-by-ncS" secondAttribute="centerY" id="2kp-rZ-z2K"/>
+                <constraint firstItem="KUd-HX-8h7" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="7TN-7g-xRS"/>
+                <constraint firstItem="Wtg-Kb-iDf" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="8kR-fT-RrH"/>
+                <constraint firstItem="Wtg-Kb-iDf" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="8w5-qe-XWN"/>
+                <constraint firstItem="BPu-by-ncS" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="Alc-B3-NTh"/>
+                <constraint firstItem="Jar-59-mVg" firstAttribute="width" secondItem="BPu-by-ncS" secondAttribute="width" id="BQw-Tb-C6q"/>
+                <constraint firstItem="Jar-59-mVg" firstAttribute="height" secondItem="BPu-by-ncS" secondAttribute="height" id="NhZ-uS-4pz"/>
+                <constraint firstItem="gQC-xC-0nM" firstAttribute="width" secondItem="gQC-xC-0nM" secondAttribute="height" multiplier="1:1" id="TVl-pU-R4z"/>
+                <constraint firstItem="gQC-xC-0nM" firstAttribute="top" secondItem="BPu-by-ncS" secondAttribute="top" constant="-8" id="X36-7F-tH4"/>
+                <constraint firstItem="BPu-by-ncS" firstAttribute="trailing" secondItem="gQC-xC-0nM" secondAttribute="trailing" constant="-8" id="YR6-k9-5hu"/>
+                <constraint firstItem="Jar-59-mVg" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="aSh-9e-Rb8"/>
+                <constraint firstItem="KUd-HX-8h7" firstAttribute="top" secondItem="BPu-by-ncS" secondAttribute="bottom" constant="8" id="ijt-nK-yPL"/>
+                <constraint firstAttribute="bottom" secondItem="Wtg-Kb-iDf" secondAttribute="bottom" id="ji9-GQ-RMb"/>
+                <constraint firstAttribute="bottom" secondItem="KUd-HX-8h7" secondAttribute="bottom" constant="8" id="k0G-FZ-1Li"/>
+                <constraint firstAttribute="centerX" secondItem="BPu-by-ncS" secondAttribute="centerX" id="lJ5-9A-1Rs"/>
+                <constraint firstAttribute="trailing" secondItem="KUd-HX-8h7" secondAttribute="trailing" constant="8" id="mdd-wO-Bnu"/>
+                <constraint firstAttribute="trailing" secondItem="Wtg-Kb-iDf" secondAttribute="trailing" id="xbB-qe-xpj"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="121" height="119"/>
+            <connections>
+                <outlet property="contentBackgroundView" destination="Wtg-Kb-iDf" id="ivV-km-iY1"/>
+                <outlet property="deleteButton" destination="gQC-xC-0nM" id="UsE-dW-SEi"/>
+                <outlet property="imageView" destination="BPu-by-ncS" id="31R-Dd-gRW"/>
+                <outlet property="progressView" destination="Jar-59-mVg" id="YtI-mC-lDG"/>
+                <outlet property="titleLabel" destination="KUd-HX-8h7" id="KjQ-OO-FjE"/>
+            </connections>
+            <point key="canvasLocation" x="187.68115942028987" y="238.72767857142856"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="DamagePlaceholder" width="284" height="221"/>
+        <image name="DeleteButtonIcon" width="14" height="14"/>
+        <namedColor name="DeleteBackgroundColor">
+            <color red="1" green="0.16862745098039217" blue="0.0039215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="SecondaryElementBackgroundColor">
+            <color red="0.0039215686274509803" green="0.792156862745098" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,0 +1,17 @@
+ib:
+  inputs: ./Code_sample/Storyboards
+  outputs:
+    templateName: scenes-swift4
+    output: Code_sample/Storyboards/StoryboardScenes.swift
+  
+xcassets:
+  inputs: ./Code_sample/Supporting Files/Assets/Assets.xcassets
+  outputs:
+    templateName: swift4
+    output: ./Code_sample/Supporting Files/Assets/Assets.swift
+    
+strings:
+  inputs: ./Code_sample/Supporting Files/Localization/en.lproj/Localizable.strings
+  outputs:
+    - templateName: structured-swift4
+      output: Code_sample/Supporting Files/Localization/Strings.swift

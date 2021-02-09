@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Unreported Damages View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="UnreportedDamagesViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="UnreportedDamagesViewController" customModule="eCar_TestTask" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iqU-ik-yfj">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please identify the unreported damage area" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fXL-a4-eFy">
+                                <rect key="frame" x="15.5" y="12" width="289" height="53"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" keyboardDismissMode="onDrag" dataMode="prototypes" prefetchingEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fWX-4t-13M">
+                                <rect key="frame" x="12" y="77" width="296" height="377"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="T3U-gT-1ju">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="5" minY="5" maxX="5" maxY="5"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Comment" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YhE-IC-Bdk">
+                                <rect key="frame" x="27" y="466" width="266" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lih-De-jMR" customClass="StateColorButton" customModule="eCar_TestTask" customModuleProvider="target">
+                                <rect key="frame" x="90" y="512" width="140" height="40"/>
+                                <color key="backgroundColor" name="ElementBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="Uym-RR-fWA"/>
+                                    <constraint firstAttribute="height" constant="40" id="ptn-bc-jAG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="normalBackgroundColor">
+                                        <color key="value" name="ElementBackgroundColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="disabledBackgroundColor">
+                                        <color key="value" name="DisabledElementBackgroundColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="fXL-a4-eFy" firstAttribute="top" secondItem="qk3-fF-fE5" secondAttribute="top" priority="750" constant="12" id="3o0-nG-pp3"/>
+                            <constraint firstItem="YhE-IC-Bdk" firstAttribute="width" secondItem="fWX-4t-13M" secondAttribute="width" multiplier="0.9" id="6jz-uZ-Ves"/>
+                            <constraint firstItem="fXL-a4-eFy" firstAttribute="centerX" secondItem="iqU-ik-yfj" secondAttribute="centerX" id="7jF-QL-fIV"/>
+                            <constraint firstItem="qk3-fF-fE5" firstAttribute="bottom" secondItem="Lih-De-jMR" secondAttribute="bottom" constant="16" id="B7q-YL-RSD"/>
+                            <constraint firstItem="Lih-De-jMR" firstAttribute="top" secondItem="YhE-IC-Bdk" secondAttribute="bottom" constant="12" id="Cz5-wJ-I20"/>
+                            <constraint firstItem="Lih-De-jMR" firstAttribute="centerX" secondItem="qk3-fF-fE5" secondAttribute="centerX" id="UV0-dl-vjl"/>
+                            <constraint firstItem="fXL-a4-eFy" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="iqU-ik-yfj" secondAttribute="leading" constant="12" id="d0K-vu-9Je"/>
+                            <constraint firstItem="fWX-4t-13M" firstAttribute="top" secondItem="fXL-a4-eFy" secondAttribute="bottom" constant="12" id="fuQ-Jq-bBG"/>
+                            <constraint firstItem="fWX-4t-13M" firstAttribute="leading" secondItem="qk3-fF-fE5" secondAttribute="leading" constant="12" id="k2x-yN-bLk"/>
+                            <constraint firstItem="YhE-IC-Bdk" firstAttribute="top" secondItem="fWX-4t-13M" secondAttribute="bottom" constant="12" id="rRu-Im-um8"/>
+                            <constraint firstItem="YhE-IC-Bdk" firstAttribute="centerX" secondItem="qk3-fF-fE5" secondAttribute="centerX" id="s2k-6C-sya"/>
+                            <constraint firstItem="fWX-4t-13M" firstAttribute="centerX" secondItem="qk3-fF-fE5" secondAttribute="centerX" id="xTE-fK-14e"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qk3-fF-fE5"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="qcV-kU-Prd"/>
+                    <connections>
+                        <outlet property="collectionView" destination="fWX-4t-13M" id="Gnc-eE-G0k"/>
+                        <outlet property="commentTextField" destination="YhE-IC-Bdk" id="hxC-qv-jTm"/>
+                        <outlet property="nextButton" destination="Lih-De-jMR" id="toH-De-8dx"/>
+                        <outlet property="titleLabel" destination="fXL-a4-eFy" id="j1u-Sd-6l7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1046.25" y="138.38028169014083"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="DisabledElementBackgroundColor">
+            <color red="0.31372549019607843" green="0.50196078431372548" blue="0.6588235294117647" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ElementBackgroundColor">
+            <color red="0.0039215686274509803" green="0.792156862745098" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
